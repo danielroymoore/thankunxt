@@ -1,0 +1,27 @@
+{
+  "name": "next-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node server/router.js",
+    "broker": "node server/broker.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server/server.js",
+    "proxy": "micro-proxy -r rules.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "body-parser": "^1.19.0",
+    "cacheable-response": "^1.6.10",
+    "express": "^4.17.1",
+    "isomorphic-unfetch": "^3.0.0",
+    "micro-proxy": "^1.1.0",
+    "next": "^8.1.0",
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
